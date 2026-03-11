@@ -1,0 +1,1 @@
+import{a as o,f as t}from"../chunks/D5ZO2-E8.js";import"../chunks/BMV49XmL.js";import{n as i}from"../chunks/BJsIAihe.js";var p=t('<p>Visit <a href="/newtab/privacy">Privacy Policy</a></p> <p>Visit <a href="/newtab/legal">Privacy Policy</a></p>',1);function f(a){var r=p();i(2),o(a,r)}export{f as component};

@@ -1,2 +1,9 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script lang="ts">
+</script>
+
+<p>
+	Visit <a href="/newtab/privacy">Privacy Policy</a>
+</p>
+<p>
+	Visit <a href="/newtab/legal">Privacy Policy</a>
+</p>

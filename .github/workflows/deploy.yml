@@ -1,0 +1,31 @@
+name: Deploy SvelteKit to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout code
+      - uses: actions/checkout@v3
+
+      # 2. Setup Node
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      # 3. Install dependencies
+      - run: npm install
+
+      # 4. Build SvelteKit static site
+      - run: npm run build
+
+      # 5. Deploy build/ to GitHub Pages
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.DEPLOY }}
+          publish_dir: ./build

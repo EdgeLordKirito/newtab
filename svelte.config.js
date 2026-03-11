@@ -5,9 +5,9 @@ import path from 'node:path';
 const config = {
 	kit: {
 		adapter: adapter(),
-		//paths: {
-		//	base: '/newtab'
-		//},
+		paths: {
+			base: '/newtab'
+		},
 		alias: {
 			$lib: path.resolve('./src/lib'),
 			$stores: path.resolve('./src/stores'),
